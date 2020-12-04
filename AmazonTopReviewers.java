@@ -238,8 +238,9 @@ public class AmazonTopReviewers extends Configured implements Tool {
 			long count = 0;
 			for (ReviewerAverageTuple reviewerAverage : values) {
 				//sum += count.get();
-				sum = sum + reviewerAverage.getAverage() * reviewerAverage.getCount();
-				count = count + reviewerAverage.getCount();
+				sum = sum + reviewerAverage.getAverage(); 
+					//* reviewerAverage.getCount();
+				//count = count + reviewerAverage.getCount();
 
 			}
 			result.setCount(count);
